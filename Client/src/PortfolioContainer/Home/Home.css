@@ -1,0 +1,22 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 825px;
+    z-index: 1;
+    background: linear-gradient(-45deg, red, green, blue, yellow);
+    background-size: 1000% 1000%;
+    animation: animate 25s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

@@ -1,0 +1,105 @@
+.Project-container{
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    
+}
+.card-container{
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    animation: ease-in;
+}
+.card-container:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 1;
+}
+
+.image-container img{
+    overflow: hidden;
+    height: 200px;
+}
+.card-content{
+    margin: 1rem;
+    margin-top: 0.5rem;
+}
+
+h2, p{
+    margin: 0;
+    padding: 0;
+}
+.card-body{
+    text-align: justify;
+}
+.card-title{
+    margin-bottom: 0.5rem;
+}
+.probtn{
+    display: flex;
+    justify-content: center;
+}
+.probtn button{
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    transform: 0.2s;
+    margin-bottom: 0.5rem;
+
+}
+.probtn button:hover{
+    background: rgba(27,156,252,0.1);
+    transform: scale(1.2);
+    border: none;
+}
+
+.probtn button a{
+    text-transform: uppercase;
+    color: #1B9CFC;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card-container{
+        margin-top: 5%;
+        overflow: hidden;
+        min-width: min-content;
+        box-shadow: 0px 0px 15px -5px;
+        transition: 0.3s;
+        animation: ease-in;
+    }
+    .image-container img{
+        overflow: hidden;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .Project-container{
+        display: flex;
+        justify-content: space-between;
+        padding: auto;
+        
+    }
+    .card-container{
+        overflow: hidden;
+        width: 250px;
+        box-shadow: 0px 0px 15px -5px;
+        transition: 0.3s;
+        animation: ease-in;
+    }
+    .image-container img{
+        overflow: hidden;
+        height: 250px;
+    }
+}

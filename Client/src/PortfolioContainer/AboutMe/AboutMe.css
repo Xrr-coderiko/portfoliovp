@@ -1,0 +1,88 @@
+.about-me-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+.about-me-parent{
+  max-width: 1000px;
+  width: 70%;
+}
+.about-me-card{
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 20px -2px #1f2235;
+}
+.about-me-profile{
+  width: 50%;
+  background-image: url("../../assets/Home/vprx1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-me-details {
+  width: 48%;
+  text-align: justify;
+  padding: 30px;
+}
+.about-me-description {
+  font-size: 12px;
+}
+.about-me-highlights {
+  margin: 50px 0;
+}
+.highlght-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: #ff5823;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: flex;
+  }
+  .about-me-details {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 666px) {
+  .about-me-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .about-me-profile {
+    height: 275px;
+    width: 275px;
+    margin-top: 40px;
+  }
+  .about-me-details {
+    width: 90%;
+  }
+}
+.btoh{
+  position: fixed;
+  height: 80px;
+  background-image: url('../../images/home.png');
+}
